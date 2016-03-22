@@ -1,17 +1,23 @@
 snippet     -h
 abbr        comment
-    --------------------------------------------------------------------------------
-    -- ${1:comment}
-    --------------------------------------------------------------------------------
+	--------------------------------------------------------------------------------
+	-- ${1:comment}
+	--------------------------------------------------------------------------------
 
 snippet     --
 abbr        haddock
-    -- | ${1:comment}
+	-- | ${1:comment}
 
 snippet     {-#
 abbr        pragma
-    {-# ${1:pragma} ${2:options} #-}
+	{-# ${1:pragma} ${2:options} #-}
 
 snippet     #L
 abbr        LANGUAGE pragma
-    {-# LANGUAGE ${1:extensions} #-}
+	{-# LANGUAGE ${1:extensions} #-}
+
+snippet     foreign-js
+abbr        foreign import javascript unsafe
+	foreign import javascript unsafe
+		"${1:javascript}"
+		${2:function} :: ${3:type}
