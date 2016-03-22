@@ -1,0 +1,70 @@
+snippet     table-simple
+abbr        simple_tables
+     Right  Center  Left
+    ------ -------- -----
+        ai    ue    oa
+        ka    ki    ku
+    ------ -------- -----
+
+snippet     table-simple-without-header
+abbr        simple_tables without header
+    ----- ------ -----
+       ai   ue   oa
+       ka   ki   ku
+    ----- ------ -----
+
+snippet     table-multiline
+abbr        multiline_tables
+    ---------------------------
+       Right  Center   Left
+     Aligned  Aligned  Aligned
+    -------- --------- --------
+          ai    ue     oa
+
+          ka    ki     ku
+    ---------------------------
+
+snippet     table-multiline-without-header
+abbr        multiline_tables without header
+    -------- --------- --------
+          ai    ue     oa
+
+          ka    ki     ku
+    -------- --------- --------
+
+snippet     table-grid
+abbr        grid_tables, not supported aligments and span multiple columns or rows
+    +------+-----------+------------+
+    | No   | Supported | Alignments |
+    +======+===========+============+
+    | 1    | Yes       | * hoge     |
+    |      |           | * piyo     |
+    +------+-----------+------------+
+    | 2    | No        | * foo      |
+    |      |           | * bar      |
+    +------+-----------+------------+
+
+snippet     table-grid-without-header
+abbr        grid_tables without header, not supported aligments and span multiple columns or rows
+    +------+-----------+------------+
+    | 1    | Yes       | * hoge     |
+    |      |           | * piyo     |
+    +------+-----------+------------+
+    | 2    | No        | * foo      |
+    |      |           | * bar      |
+    +------+-----------+------------+
+
+snippet     table-pipe
+abbr        pipe_tables, not supported omitting the header, containing block elements in cell and span multiple columns or rows
+    | Right | Left | Default | Center |
+    |------:|:-----|---------|:------:|
+    |   12  |  12  |    12   |    12  |
+    |  123  |  123 |   123   |   123  |
+    |    1  |    1 |     1   |     1  |
+
+snippet     table-pipe-orgtbl
+abbr        pipe_tables like the orgtbl format, not supported omitting the header, containing block elements in cell and span multiple columns or rows
+    | One | Two   |
+    |-----+-------|
+    | my  | table |
+    | is  | nice  |
